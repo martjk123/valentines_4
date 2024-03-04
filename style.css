@@ -1,0 +1,345 @@
+#no{
+    background-color:rgb(252, 3, 3);
+    border:none;
+    color:white;
+    border-radius:5px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:2em;
+    cursor:pointer;
+    animation-name:no;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+
+#no:hover{
+    background-color:blue;
+    box-shadow:5px 10px 10px red;
+}
+
+
+.container{
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.container2{
+    margin-top:-20px;
+}
+
+.container3{
+    display:flex;
+    justify-content:center;
+
+}
+
+#yes{
+    margin-right:12px;
+    border:none;
+    background-color:rgb(25, 214, 25);
+    color:white;
+    border-radius:5px;
+   padding:10px;
+   padding-left:20px;
+   padding-right:20px;
+   font-size:2em;
+   cursor:pointer;
+}
+#yes:hover{
+    background-color:blue;
+    box-shadow: 5px 10px 10px rgb(1, 250, 1);
+}
+
+p{
+    display:flex;
+    cursor:pointer;
+}
+
+.pdiv{
+    margin-top:-30px;
+    display:flex;
+    justify-content:center;
+    font-size:2em;
+    color:white;
+    
+}
+
+#view{
+    color:rgb(249, 6, 6);
+    font-size:3em;
+    font-family:sans-serif;
+    padding-top:40px;
+    display:none;
+}
+
+
+.divView{
+    padding:12px;
+    /* position:absolute;/////////////// */
+    right:450px;
+}
+
+#image{
+   
+    height:200px;
+    width:200px;
+    padding-bottom:-200px;
+    /* padding-left:50px; */
+    /* position:relative;////////////////////
+    right:-180px; */
+    border-radius:50%;  
+    display:none;
+    
+}
+
+body{
+    background-color:rgb(244, 165, 226);
+    animation-name:body;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+
+}
+@keyframes body{
+    0%{background-color:rgb(244, 165, 226)}
+    50%{background-color:rgb(243, 107, 241)}
+}
+
+
+#w:hover{
+    color:blue;
+}
+
+#i:hover{
+    color:red;
+}
+
+/* #emoji{
+    font-size:10em;
+    position:absolute;
+    right:460px;
+    bottom:40px;
+    padding-top:100px;
+    
+} */
+
+#gif2{
+  height:150px;
+  border-radius:100%;
+  display:none;
+}
+
+#gif3{
+height:200px;
+border-radius:50%;
+display:none;
+height:150px;
+}
+
+.imageyes{
+ padding-top:-100px;
+display:flex;
+justify-content:space-between;
+padding:50px;
+
+}
+
+#oahh{
+    display:flex;
+    justify-content:center;
+    height:50px;
+}
+
+#gif1_div{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:50px;
+}
+
+.container_1{
+   
+     
+}
+
+
+#sad1{
+    height:100px;
+    display:none;
+}
+
+#sad2{
+height:100px;
+display:none;
+}
+
+#sad3{
+    height:100px;
+    display:none;
+}
+
+#viewpic{
+    display:flex;
+    justify-content:center;
+    padding-right:-200px;
+}
+
+.pdiv{
+ margin-top:50px;
+ padding-bottom:40px;
+
+}
+
+#p{
+    
+}
+
+.gf{
+    font-size:2em;
+    font-weight:bold; 
+    color:rgb(65, 33, 249);
+    
+}
+
+.p1{
+    margin-top:-25px;
+position:relative;
+left:110px;
+font-size:.8em;
+font-weight:bold;
+color:rgb(207, 30, 30);
+}
+#w{
+animation-name:wcolor;
+animation-duration:3s;
+animation-iteration-count:infinite;
+}
+@keyframes wcolor{
+   0%{color:rgb(207, 30, 30)}
+   20%{color:white};
+
+}
+#i{
+    animation-name:icolor;
+    animation-duration:3s;
+   animation-iteration-count:infinite;
+}
+@keyframes icolor{
+    0%{color:rgb(207, 30, 30)}
+    20%{color:white}
+}
+#l{
+animation-name:lcolor;
+animation-duration:3s;
+animation-iteration-count:infinite;
+
+}
+@keyframes lcolor{
+    0%{color:rgb(207, 30, 30)}
+    20%{color:white}
+}
+
+#y{
+animation-name:ycolor;
+animation-duration:3s;
+animation-iteration-count:infinite;
+}
+@keyframes ycolor{
+    0%{color:rgb(207, 30, 30)}
+    20%{color:white}
+}
+#o{
+animation-name:ocolor;
+animation-duration:3s;
+animation-iteration-count:infinite;
+}
+@keyframes ocolor{
+    0%{color:rgb(207, 30, 30)}
+    20%{color:white}
+}
+#u{
+    animation-name:ucolor;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    }
+    @keyframes ucolor{
+        0%{color:rgb(207, 30, 30)}
+        20%{color:white}
+    }
+    #b{
+        animation-name:l2color;
+        animation-duration:3s;
+        animation-iteration-count:infinite;
+        }
+        @keyframes l2color{
+            0%{color:rgb(207, 30, 30)}
+            20%{color:white}
+        }
+        
+        #e{
+            animation-name:l2color;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+            }
+            @keyframes l2color{
+                0%{color:rgb(207, 30, 30)}
+                20%{color:white}
+            }
+
+            #m{
+                animation-name:l2color;
+                animation-duration:3s;
+                animation-iteration-count:infinite;
+                }
+                @keyframes l2color{
+                    0%{color:rgb(207, 30, 30)}
+                    20%{color:white}
+                }
+                
+                #l2{
+                    animation-name:l2color;
+                    animation-duration:3s;
+                    animation-iteration-count:infinite;
+                    }
+                    @keyframes l2color{
+                        0%{color:rgb(207, 30, 30)}
+                        20%{color:white}
+                    }
+                    
+            
+    
+
+
+
+
+
+.p2{
+    margin-top:10px;
+    background-color:bisque;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    right:130px;
+    padding:12px;
+    font-weight:bold;
+    color:rgb(176, 11, 143);
+    font-size:.8em;
+    border-radius:100px;
+    top:30px;
+    height:30px;
+    padding:5px;
+}
+
+.y2{
+    position:relative;
+    right:135px;
+    top:30px;
+    justify-content:center;
+}
+#m{
+    position:relative;
+    right:130px;
+    top:30px;
+    justify-content:center;
+}

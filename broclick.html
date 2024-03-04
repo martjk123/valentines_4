@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pdiv">
+        <p id="p">
+          <div class="p1">
+            <span id="w">W</span>
+            <span id="i">i</span>
+            <span id="l">l</span>
+            <span style="margin-right:15px" id="l2">l</span>
+            <span id="y">Y</span>
+            <span id="o">o</span>
+            <span style="margin-right:15px" id="u">u</span>
+            <span id="b">b</span>
+            <span style="margin-right:15px" id="e">e</span>
+            <span id="m">m</span>
+            <span style="margin-right:15px" id="y" class="y2">y</span>
+          </div>
+          <div class="p2"><br>
+            <span>G</span>
+            <span>i</span>
+            <span>r</span>
+            <span>l</span>
+            <span>f</span>
+            <span>r</span>
+            <span>i</span>
+            <span>e</span>
+            <span>n</span>
+            <span>d</span>
+            <span>?</span>
+          </div>
+        </p>
+    </div>
+  
+    <div class="container">
+        <div class="container2">
+            <div class="container3">
+                <div><button id="yes" onclick="yesClick();">Yes</button></div>
+                <div><button id="no" onclick="clickNo();">No</button>
+                </div>
+                <div id="image2"></div>
+            </div>
+        </div>
+    </div>
+    <div><label id="viewpic"></label></div>
+    <div class="divView">
+        <div class="container_1">
+            <div id="gif1_div"><img src="gif2.png" id="image"></div>
+            <div id="oahh"><h1 id="view" style="font-family:Georgia;">I love you</h1></div>
+        </div>
+        <h1 id="sure"></h1>
+    </div>
+    <div class="imageyes">
+        <img id="gif2" src="heart1.png">
+        <img src="gif3.png" id="gif3">
+    </div>
+
+    <!--sad every no 
+        
+        <div>
+        <img src="gifsad1.png" id="sad1">
+        <img src="sad2.png" id="sad2">
+        <img src="sad3.png" id="sad3">
+    </div>
+     -->
+    <div><label id="viewpic"></label></div>
+
+    <script>
+        // let clickCount = 0; // Variable to track the number of clicks
+        // let imageIndex = 0;
+
+        // const imagesElements = []; // Empty array to store image elements
+
+     
+        // function loadImages() {
+        //     const sad1 = document.createElement("img");
+        //     sad1.src = "gifsad1.png";
+        //     imagesElements.push(sad1);
+
+        //     const sad2 = document.createElement("img");
+        //     sad2.src = "sad2.png";
+        //     imagesElements.push(sad2);
+
+        //     const sad3 = document.createElement("img");
+        //     sad3.src = "sad3.png";
+        //     imagesElements.push(sad3);
+        // }
+        // loadImages();
+    
+        let clickCount = 0;
+        const buttonText = ["Are you sure?", "Sure na sure?", "Super sure?"];
+
+        function clickNo() {
+            document.querySelector("#no").innerHTML = buttonText[clickCount % buttonText.length];
+            clickCount++;
+        
+            // document.querySelector("#viewpic").innerHTML = imagesElements[imageIndex % imagesElements.length].outerHTML;
+            // imageIndex++;  images sad view
+          
+            const yesButton = document.getElementById("yes");
+            const currentHeight = parseInt(window.getComputedStyle(yesButton).height);
+            const currentWidth = parseInt(window.getComputedStyle(yesButton).width);
+            const currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize)
+
+            const scaleFactor = 1.5;
+            const newHeight = currentHeight * scaleFactor;
+            const newWidth = currentWidth * scaleFactor;
+            const newFontSize = currentFontSize * scaleFactor;
+
+            yesButton.style.backgroundColor = "rgb(25, 214, 25);";
+            yesButton.style.height = newHeight + "px";
+            yesButton.style.width = newWidth + "px";
+            yesButton.style.fontSize = newFontSize + "px";
+        }
+
+        function yesClick() {
+            document.querySelector("#view").style.display = "block";
+            document.querySelector("img").style.display = "block";
+            document.querySelector(".container").style.display = "none";
+            document.querySelector(".pdiv").style.display = "none";
+            document.querySelector("#gif2").style.display = "block";
+            document.querySelector("#gif3").style.display = "block";
+        }
+    </script>
+</body>
+</html>
